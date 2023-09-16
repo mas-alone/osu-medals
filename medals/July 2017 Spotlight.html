@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>July 2017 Spotlight</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "July 2017 Spotlight",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "游玩July 2017 Spotlight这个谱面包内的所有谱面，每个谱面需要至少游玩1个难度，可以使用NF等所有mods，只需要完成一个游戏模式内的所有谱面即可。",
+	  "PackID": "1253,1254,1255,1256",
+	  "BeatmapID": ""
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

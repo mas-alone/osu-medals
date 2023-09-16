@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospitality</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Hospitality",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "通过任意guess diff，然后马上游玩该guess diff难度作者的谱面。不允许使用NF。(你玩的第二个地图可以是任何地图，可以是该gd作者的客串难度或者主难度。但第一个地图必须是gd难度)",
+	  "PackID": "",
+	  "BeatmapID": ""
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

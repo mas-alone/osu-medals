@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Equilibrium</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Equilibrium",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "在任何谱面上获得相同数量的300，100，50 且均不低于15个",
+	  "PackID": "",
+	  "BeatmapID": "188110,741358,1402715,737166,1136505,161902,1018878,361543,814198,3206415,90735,1582618"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

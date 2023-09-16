@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exquisite</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Exquisite",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "使用SD和PF,连续FC两张3星以上的谱面",
+	  "PackID": "",
+	  "BeatmapID": "2245786,1745945,1070639,804882,1697648,338912,1802637,66814,2234330,659439,547275,1182090,16265,47327,933105,983896,1070687,797353,3101670,3147664,521458,1655728,1156498,663819,2054967,2245776,2025940,2222887"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

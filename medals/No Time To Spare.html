@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>No Time To Spare</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "No Time To Spare",
+	  "colMods": "Doubletime",
+      "gamemodeText": "",
+	  "MedalSolution": "使用DT完成FC任何谱面，需要谱面DT后长度小于30秒",
+	  "PackID": "",
+	  "BeatmapID": "1801936,3499848,846907,34527,1492007,20380,857602,2245770,38329,3152716,867511,1402716,1179679,553189,756205,930378,716656,1697647,386138"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

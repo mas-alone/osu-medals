@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Infinitesimal</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Infinitesimal",
+	  "colMods": "Hardrock",
+      "gamemodeText": "standard",
+	  "MedalSolution": "开启HR然后FC任意谱面，需要谱面开启HR后的cs有7.8以上。允许使用其他mods，例如HDHR",
+	  "PackID": "",
+	  "BeatmapID": "860486,3561026,1280961,2431514,994,2792912,2768616,17917,315,97,3822437,3591219,55,1377,3474673,3511133,1166729,3282698,3579401,2431517,20382,1620144"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

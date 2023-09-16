@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Natural 20</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Natural 20",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "在任意一张5*以上谱面中，你的 300判定 是20的倍数",
+	  "PackID": "",
+	  "BeatmapID": "1970829,2025938,1153237,722238,4208420,114446,1961271,263614,2018371,1710700,1988753,1584052,4247529,2409659,2245774,247999,2165271,1618799,2102292,2054608,203993,2060305,847314,2554442,606213,1711830,3772210,449484,649984,638493,718082,1925194,1620144,476149,817174,1149638,713442,1059388,899103,153631,130754,1592826,2574249,1869933,1201303,2449788,3030156,2231267,821691,2872892,1796307,1008503,2514777,2223259"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elite</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Elite",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "通过任何最大连击数超过1500，高于3.5星，AR8,OD8以上的谱面，且获得不低于1337的连击数",
+	  "PackID": "",
+	  "BeatmapID": "651744,1331578,1741498,1124138,58037,3534255,2139556,2316176,2015472,3740765,811925,2573589,1528842,3671976,1109306,2526538,2113247,70052,736215,2388562"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Just One Second</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Just One Second",
+	  "colMods": "Flashlight,Hidden",
+      "gamemodeText": "",
+	  "MedalSolution": "使用FL和HD通过任何AR9或以上的谱面",
+	  "PackID": "",
+	  "BeatmapID": "123,1675841,486513,2573161,1445912,1939224,4231468,746363,1843244,298842,1620144,2769504,1069081,1762730,330,1129194,48416,553189,1709121"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

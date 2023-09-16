@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internment</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Internment",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "在下面两个谱面的任何insane难度(4星-5.29星)，连开三盘游戏，这三次的连击数刚好等于你在玩的谱面难度颜色的RGB值。例如您选择3022086的话，三把的连击数要求分别为：255x，104x，108x 。如果您选择4052455的话，三把的连击数要求分别为：243x，76x，133x 。请注意你必须连续提交三次成功的分数才算完成成就，如果其中的某一次重开了，或者连击数达不到要求，都需要从第一次开始重新打。",
+	  "PackID": "",
+	  "BeatmapID": "3022086,4052455"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

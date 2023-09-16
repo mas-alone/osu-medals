@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meticulous</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Meticulous",
+	  "colMods": "Easy,Perfect",
+      "gamemodeText": "standard",
+	  "MedalSolution": "使用EZ和PF然后通过任意一张谱面，需要谱面再开启mods后有3星以上的难度",
+	  "PackID": "",
+	  "BeatmapID": "339055,1069081,1592913,1492012,932223,1817450,1697648,402494,966136,1655726,259,2514776,1614130,1070687,1789437,12448,3542542,1182213,2684917,77711,279558,83391,69151,39661,574139,2116802,622607,1707789,1083103,2222070"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

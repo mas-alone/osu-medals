@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feelin' It</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Feelin' It",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "通过一张谱面，并使你的最大连击数与谱面的BPM相同，或者为谱面BPM的一半",
+	  "PackID": "",
+	  "BeatmapID": "1267643,760464,741477,1655718,1252717,1802637,3258800"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

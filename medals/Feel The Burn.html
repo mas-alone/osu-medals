@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feel The Burn</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Feel The Burn",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "FC任何时长大于7分钟的谱面，请注意谱面必须在使用mods之前满足这个标准",
+	  "PackID": "",
+	  "BeatmapID": "2396095,20584,1356101,307618,3899778,283252,1200519,366919,381490,1256809,1302785,264643,19753,3813583,1777806,1190555,1082260,260489,2015472,58037,1164889"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

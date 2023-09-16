@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eureka!</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Eureka!",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "FC任何艺术家是 The Flashbulb 的谱面，需要谱面难度为4星以上",
+	  "PackID": "",
+	  "BeatmapID": "767594,1001757,2058207,2060997,1736692,2019271,2078180,1735533,1487644,2662762,2042135,2243617,2022477,1642858,1388356,1142273,2060804,2037345"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

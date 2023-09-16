@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>In Memoriam</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "In Memoriam",
+	  "colMods": "Easy,Flashlight,Halftime,Hidden",
+      "gamemodeText": "standard",
+	  "MedalSolution": "使用EZ+FL+HT+HD然后FC任何谱面，需要谱面再使用这些mods后有4星以上的难度",
+	  "PackID": "",
+	  "BeatmapID": "1893461,1592916,1490978,2030431,1989857,339055,3426490,1961271,1290997,2145646,1399371,2054965,1455779"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

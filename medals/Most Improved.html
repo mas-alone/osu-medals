@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Most Improved</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Most Improved",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "在得分超过10万的情况下获得 D 评价，然后在游戏结束后的24小时内在同一张地图上获得a或更高的评价，允许使用NF等降低难度的mods",
+	  "PackID": "",
+	  "BeatmapID": "3320180,1236756,2347578,3756813,981960,2612497,1278814,3322673,3695127"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

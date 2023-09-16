@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Impeccable</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Impeccable",
+	  "colMods": "Doubletime,Perfect",
+      "gamemodeText": "",
+	  "MedalSolution": "使用DT和PF通过任何4星以上的谱面",
+	  "PackID": "",
+	  "BeatmapID": "1070793,1149864,933105,2223257,1236756,1181031,920985,3441203,1182090,3424970,1092278,637549,2635140,290306,3401350,3152714,1445892,1519289,665129,1162698,1070687,2507691,2145933,1105592,382042,1064726,1182214,1483942,804882,936800,150272"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>
