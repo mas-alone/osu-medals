@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tribulation</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Tribulation",
+	  "colMods": "",
+      "gamemodeText": "通过任何你游玩了100次但从未通过的谱面(巨折磨，想到就刷一下不要刻意刷把!)",
+	  "MedalSolution": "",
+	  "PackID": "",
+	  "BeatmapID": ""
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

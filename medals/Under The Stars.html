@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Under The Stars</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Under The Stars",
+	  "colMods": "Flashlight,Hidden",
+      "gamemodeText": "",
+	  "MedalSolution": "使用FL和HD通过下面的谱面的主难或者次难",
+	  "PackID": "",
+	  "BeatmapID": "1675104"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

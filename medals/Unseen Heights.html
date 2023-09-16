@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unseen Heights</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Unseen Heights",
+	  "colMods": "",
+      "gamemodeText": "通过任何谱面难度是100星以上的谱面，可以是转谱，只要转谱后谱面难度超过100星",
+	  "MedalSolution": "",
+	  "PackID": "",
+	  "BeatmapID": "2536330,2571858,2573161,1257904,2055234,2572147"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

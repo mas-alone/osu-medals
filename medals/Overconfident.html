@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Overconfident</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Overconfident",
+	  "colMods": "Doubletime,Flashlight,Hardrock,Hidden,Nightcore",
+      "gamemodeText": "使用DT,FL,HR,HD,NC中任意一个mods，以低于70%acc通过一张谱面",
+	  "MedalSolution": "",
+	  "PackID": "",
+	  "BeatmapID": "1147,259,238,1103144,1802637,3405635,1165130,741477,1655728,20382,315,37013,789087,3708155,1605148,24233,3671976,1024723,3046792,123,1972186"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

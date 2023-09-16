@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thrill of the Chase</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Thrill of the Chase",
+	  "colMods": "Doubletime,Nightcore",
+      "gamemodeText": "standard",
+	  "MedalSolution": "使用DT或者NC然后FC下面这张谱面的任何难度，需要在应用DT/NC之后谱面难度超过2.5星。允许使用DT/NC旁边的其他mods，例如HDDT，DTHR",
+	  "PackID": "",
+	  "BeatmapID": "1040942"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

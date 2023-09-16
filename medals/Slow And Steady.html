@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slow And Steady</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Slow And Steady",
+	  "colMods": "Halftime,Perfect",
+      "gamemodeText": "",
+	  "MedalSolution": "使用HT和PF然后FC任何3星以上的谱面",
+	  "PackID": "",
+	  "BeatmapID": "1697648,259,1070639,803783,935029,1401257,3140597,944502,2065554,1303667,754175,1179679,1492008,1149713,3037701,2328680,1182213,1674283,2245776,486513,1984690"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

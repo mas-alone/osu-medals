@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Sink</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Time Sink",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "按顺序通过下面两张谱面，允许使用NF等降低难度的mods（你必须得到连续的分数，如果你在第二张地图上的任何时间失败了，你必须从头开始重新开始。）",
+	  "PackID": "",
+	  "BeatmapID": "37318,3162305"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

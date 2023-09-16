@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ten To One</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Ten To One",
+	  "colMods": "",
+      "gamemodeText": "通过一张10分钟或以上的谱面，然后再通过一张1分钟或更短的谱面(请注意是允许DT的，只需要确保在使用DT前谱面的时间超过10分钟)",
+	  "MedalSolution": "",
+	  "PackID": "",
+	  "BeatmapID": "1854032,389398,2202493,1256809,1715259,2920787,19753,165416,1639737,1236790,275990,489016,1762730,156352,3230247,9007,1371120,86653,2596015,3322736,1962275"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Star Power</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Star Power",
+	  "colMods": "Hardrock",
+      "gamemodeText": "",
+	  "MedalSolution": "SS一张不开HR的4*以上谱面，然后SS一张开HR的同一张谱面。你必须再完成第一张后马上完成第二张，且不能重试或退出，一但这样做了，你只能从第一张重新开始玩。另外只要开启HR后谱面难度超过4星就可以，HR之前可以低于4星。(你可以在NM/HR使用其他任何增加难度的mods，但如果你使用了这个mods，就必须在两次游戏过程中都需要使用，例如，HD→HDHR可以，但NM→HDHR不行)",
+	  "PackID": "",
+	  "BeatmapID": "259,2245786,486513,3505286,2060303,3925116,3912524,944502,871815,2234312,514515,1853975,1846226,3401350,39523,1437400,1129194,1492010,1059390,222304,2425695,1740509,2596017,1161445,3415525,1811435"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

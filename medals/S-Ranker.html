@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>S-Ranker</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "S-Ranker",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "24小时内在不同谱面上获得5个S(或SS)评价（S+和SS+也可以的，这意味着可以使用HD或FL）",
+	  "PackID": "",
+	  "BeatmapID": ""
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Up For The Challenge</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Up For The Challenge",
+	  "colMods": "Hardrock",
+      "gamemodeText": "",
+	  "MedalSolution": "使用HR然后FC一张谱面，该谱面要求开启HR后达到AR10,OD10,HP10。 这代表使用HR前该谱面至少为AR7.2，OD7.2，HP7.2",
+	  "PackID": "",
+	  "BeatmapID": "55432,710325,4085669,786680,75831,3082528,26547,7575,205022,3690389,104,203861,217253,62269,64468,281523,492948,665475,304212"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unstoppable</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Unstoppable",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "通过任何AR11，OD10+DT，HP10+DT和BPM为240以上的谱面，在应用DT之前，谱面至少为AR7.2，OD7.2，HP7.2和160BPM，而且必须使用DT和HR(可选HD)",
+	  "PackID": "",
+	  "BeatmapID": "20737,520372,492948,2667,86474,52031"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

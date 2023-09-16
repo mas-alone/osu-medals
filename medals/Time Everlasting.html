@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Everlasting</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Time Everlasting",
+	  "colMods": "",
+      "gamemodeText": "taiko",
+	  "MedalSolution": "在不使用EZ/NF/HT mods的情况下，FC任何7星图（如果使用增加难度的mods 例如DT，星数按开启mods之后的为准）",
+	  "PackID": "",
+	  "BeatmapID": "3824662,484661,3817225,3907074,3935662,3626457,1806900,3140729,3930183,3903674,3607885,3734552"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

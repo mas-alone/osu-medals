@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tunnel Vision</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Tunnel Vision",
+	  "colMods": "Flashlight",
+      "gamemodeText": "standard",
+	  "MedalSolution": "使用FL通过任何谱面，并且连击数不能高于200.允许使用NF等降低难度的mods.请注意无论您选择哪一张谱作为成就图，您都需要注意谱面的 圈数+滑条数数(两倍)+转盘数(三倍) 这些相加的值需要大于400",
+	  "PackID": "",
+	  "BeatmapID": "614323,661235,905800,2924352,1412627,103438,35031,19309"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

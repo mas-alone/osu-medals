@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resurgence</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Resurgence",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "游玩任意一张标题含有 ashes 的谱面，然后通过Panda Eyes & Teminite - Immortal Flame (feat. Anna Yvette) 这张谱面。允许使用NF等降低难度的mods",
+	  "PackID": "",
+	  "BeatmapID": "1489207,2482730,1601387,1520231,2049245,2492678,1744286,2390371,3148521"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

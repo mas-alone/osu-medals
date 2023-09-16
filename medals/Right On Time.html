@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Right On Time</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Right On Time",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "在每小时的第一分钟内通过这张谱面，注意，必须在这个区间提交成绩，所以如果你是DT，则需要在每小时的59分27秒之前开始游戏",
+	  "PackID": "",
+	  "BeatmapID": "2277127"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

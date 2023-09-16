@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Persistence Is Key</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Persistence Is Key",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "在这张谱面的任何难度，失败5次，然后通过这张谱面。请注意最少需要有10000分才算一次有效成绩",
+	  "PackID": "",
+	  "BeatmapID": "2699284"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

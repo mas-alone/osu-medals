@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supremacy</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Supremacy",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "在不使用EZ/NF/HT mods的情况下，通过任何7星图（如果使用增加难度的mods 例如DT，星数按开启mods之后的为准）",
+	  "PackID": "",
+	  "BeatmapID": "24233,315,2496721,1596752,1398809,3326605,2064453,3874871,3164032,19990,2820225,1746034,2063931,1200519,3066988,2689496,933875,3912664,296,2354752"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To The Core</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "To The Core",
+	  "colMods": "Doubletime,Nightcore",
+      "gamemodeText": "",
+	  "MedalSolution": "使用DT或者NC游玩任何标题或者艺术家名称带有'nightcore'的谱面，不允许开降低难度mods",
+	  "PackID": "",
+	  "BeatmapID": ""
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

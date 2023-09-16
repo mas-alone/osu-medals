@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Dilation</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Time Dilation",
+	  "colMods": "Doubletime,Nightcore",
+      "gamemodeText": "",
+	  "MedalSolution": "使用上述任意一种mods，通过任何一张8分钟或更长时间的谱面。(请注意这意味着DT,NC之前谱面需要至少12分钟。而且不允许NF，但其他不与DT,NC冲突的降低难度mods是可以的)",
+	  "PackID": "",
+	  "BeatmapID": ""
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

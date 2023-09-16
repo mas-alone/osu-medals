@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phantasm</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Phantasm",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "在不使用EZ/NF/HT mods的情况下，通过任何10星图（如果使用增加难度的mods 例如DT，星数按开启mods之后的为准）",
+	  "PackID": "",
+	  "BeatmapID": "2844649,3054701,1596752,19753,1811527,3977191,2820225,939197,1398809,385544,2782887,95382,3573970,3613647,3369714,3526113,104229,3618901,2229349,156352,3119369"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

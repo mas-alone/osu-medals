@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Superfan</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Superfan",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "连续玩10张来自同一艺术家的谱面，必须是不同谱面。允许使用NF等降低难度的mods(注意艺术家名称，不能有一点点不一样，有些时候谱师填写的元数据会有一点偏差)",
+	  "PackID": "",
+	  "BeatmapID": ""
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>
