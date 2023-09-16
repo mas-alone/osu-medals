@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aeon</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Aeon",
+	  "colMods": "Flashlight,Halftime,Hidden",
+      "gamemodeText": "",
+	  "MedalSolution": "使用FL和HT还有HD然后FC任何2011年或之前ranked的谱面，谱面必须在使用mods后有4星和3分钟的时长",
+	  "PackID": "",
+	  "BeatmapID": "45074,1147,111680,24674,48416,24695,296,41951,93964,58005,39549,43423,83198,123021"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

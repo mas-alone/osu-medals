@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dekasight</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Dekasight",
+	  "colMods": "Easy,Flashlight,Hidden",
+      "gamemodeText": "standard",
+	  "MedalSolution": "使用EZ和FL和HD然后FC任何谱面，需要谱面难度至少为3星",
+	  "PackID": "",
+	  "BeatmapID": "1069081,1592913,1036393,3550412,3518,1905558,339058,452185,315,1321399,259,2546844,3370179,1492012,1270576,1269345,2150734"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Challenge Accepted</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Challenge Accepted",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "通过任何谱面状态为approved的谱",
+	  "PackID": "",
+	  "BeatmapID": "131891,242822,172619,127846,27211,48416,111680,32997,652496,24695,35781,49101,42152,84092,153246,71087,9007,72402,136553,104229"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

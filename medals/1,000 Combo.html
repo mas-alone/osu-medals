@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1,000 Combo</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "1,000 Combo",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "在std模式任何一张谱面中达到1000连击，可以使用所有mods",
+	  "PackID": "",
+	  "BeatmapID": "271339,1200520,2394569,869722,3736114,1806994,2149492,2576191,1005957,183361,895954,124738,2834,2743062,763348,2674930,1083694,815522"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

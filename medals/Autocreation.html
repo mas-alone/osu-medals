@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Autocreation</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Autocreation",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "通过任何艺术家和谱师是同一个人的谱面，可以使用NF等降低难度的mods",
+	  "PackID": "",
+	  "BeatmapID": "1801936,3440632,622457,2935272,1057681,1103144,652931,3100794,2935119,703584,3717577,1194313,3617055,2817024,2100925,4107794,2221529,1766693,2054906,3376698,3764203,3350321,3698344,4183278,2163137,2935273,3328310,799871,347171,931853,2208052,855536,3769339,1779729,268315,3525121,3711613,1382443,3625849,2163250"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anguish Quelled</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Anguish Quelled",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "在不使用EZ/NF/HT mods的情况下，FC任何6星图（如果使用增加难度的mods 例如DT，星数按开启mods之后的为准）",
+	  "PackID": "",
+	  "BeatmapID": "82962,44659,1869933,2250747,781124,2684855,1383388,116128,2245774,3651278,3763691,269963,3967160,1512368,84398,1385212,259,2410945,1702172,714001"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deliberation</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Deliberation",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "使用HT并FC任何ranked或者loved的谱面，需要在开启HTmods后谱面难度有6星以上难度。允许使用其他mods，例如HTHR",
+	  "PackID": "",
+	  "BeatmapID": "944502,1515526,728871,555797,2782887,2132775,3261948,1909555,1821239,1161457,1165130,1172819,1517355,1457188,3745820,1775270,1436138,1075653,2571614,3030766,3797369,2201824,1201636,1565460,279032,3140221,2679663,724015,591347,4006315,4018619,547566,3510391,1927666,2123284,789765,2496720,2738848,1586453,1540691,1995061,1527747"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

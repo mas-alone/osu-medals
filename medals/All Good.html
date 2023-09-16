@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Good</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "All Good",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "在这张谱面上连续刷新两次成绩，允许使用NF等降低难度的mods，需要注意如果使用了NF等mods，那下一次游玩也必须使用相同的mods",
+	  "PackID": "",
+	  "BeatmapID": "2223856"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

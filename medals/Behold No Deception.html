@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Behold No Deception</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Behold No Deception",
+	  "colMods": "Easy",
+      "gamemodeText": "standard",
+	  "MedalSolution": "使用EZ然后FC任何谱面，需要谱面再开启EZ后还有4星以上难度",
+	  "PackID": "",
+	  "BeatmapID": "1461270,339055,315,1492012,2431862,1597806,1069081,1385415,1802637,2110035,19667,1537198,3370181,2217239,1149925,1655726,36658,67018,1961271,44139,5251,407788,796012,722235,1592916,708367,1762724"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Afterimage</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Afterimage",
+	  "colMods": "Halftime,Hidden",
+      "gamemodeText": "standard",
+	  "MedalSolution": "使用HL和HD通过任何谱面",
+	  "PackID": "",
+	  "BeatmapID": "259,1069082,315,951401,1655718,2972848,3046792,510510,1586453,722237,897279,155064,1529189,3671976,1396342,1905558"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

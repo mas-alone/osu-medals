@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dead Center</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Dead Center",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "FC任何3*以上的谱面，需要谱面圈数和滑条数一样多",
+	  "PackID": "",
+	  "BeatmapID": "3063239,3218345,665129,786980,201644,783427,1746344,1897577,430359,3620634,3141505,1349207,2316841,1745945,3639413,35242,3674418,2663022,3568230,2205130,122141,3226510,3540028,3503652,2104431,1861763,3445980,1797544,2640743,875094,2603107,3564325,2123908,2519744,980667"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

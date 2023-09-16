@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consolation Prize</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "Consolation Prize",
+	  "colMods": "",
+      "gamemodeText": "standard",
+	  "MedalSolution": "在任何地图上获得超过10万分的 D 评价。且不允许使用任何mods。请注意你必须先获得Most Improved成就才能获得这个成就",
+	  "PackID": "",
+	  "BeatmapID": "1718816,2569254,1605148,40416,43570,2787125,29802,1043089,1821081,2536330,3118683,2573493,96,123,41313,2598993,81467,1592917,1954766,1278814,1529756,111680"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>
