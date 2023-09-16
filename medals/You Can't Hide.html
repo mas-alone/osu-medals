@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>You Can't Hide</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "You Can't Hide",
+	  "colMods": "Flashlight,Hidden",
+      "gamemodeText": "",
+	  "MedalSolution": "使用FL和HD然后FC任意一张超过4星的谱面",
+	  "PackID": "",
+	  "BeatmapID": "1905558,1762730,1267491,1410860,1129194,315,1939224,796012,1797557,259,2165190,2165189,402494,1321399,3578111"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

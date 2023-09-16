@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>When You See It</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "When You See It",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "通过任何艺术家是 xi 的谱面，acc要求为x7.27%，例如97.27%,87.27%等等",
+	  "PackID": "",
+	  "BeatmapID": "680919,1884871,658127,949232,1296763,2352543,789816,725246,95028,3407101,129891,3405619,677872,680920"
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>

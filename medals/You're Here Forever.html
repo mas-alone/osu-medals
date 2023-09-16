@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>You're Here Forever</title>
+</head>
+<body>
+  <div id="medals"></div>
+
+  <script>
+    // 创建要输出的JSON数据
+    var jsonData = {
+      "MedalTitle": "You're Here Forever",
+	  "colMods": "",
+      "gamemodeText": "",
+	  "MedalSolution": "在2周或更长时间没有玩任何游戏模式后通过任何地图，允许开NF等mods(你必须在对应模式中有超过2500次的pc，你必须确保游玩提交的分数是一次性的，也就是没有重新开始，否则会算作失败，又得等2周。)",
+	  "PackID": "",
+	  "BeatmapID": ""
+    };
+
+    // 将JSON数据转换为字符串
+    var jsonString = JSON.stringify(jsonData, null, 2);
+
+    // 将JSON字符串插入到HTML页面中
+    var jsonOutputDiv = document.getElementById("medals");
+    jsonOutputDiv.innerHTML = "<pre>" + jsonString + "</pre>";
+  </script>
+</body>
+</html>
