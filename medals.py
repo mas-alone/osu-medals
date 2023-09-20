@@ -2517,9 +2517,5 @@ json_data = '''
 ]
 '''
 
-data = json.loads(json_data)
-medal_dict = {}
-
-for item in data:
-    medal_title = item['MedalTitle']
-    medal_dict[medal_title] = item
+medals = json.loads(json_data)
+medal_dict = {medal["MedalTitle"]: medal for medal in medals}
