@@ -1,3 +1,6 @@
+import json
+
+json_data = '''
 [
   {
     "MedalTitle": "1,000 Combo",
@@ -2512,3 +2515,7 @@
     "BeatmapID": "11094,1605551,1069081,3797894,70090,1815796"
   }
 ]
+'''
+
+medals = json.loads(json_data)
+medal_dict = {medal["MedalTitle"]: medal for medal in medals}
