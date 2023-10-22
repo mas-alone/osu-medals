@@ -955,7 +955,7 @@
     "MedalTitle": "Hospitality",
     "colMods": "",
     "gamemodeText": "",
-    "MedalSolution": "通过任意guess diff，然后马上游玩该guess diff难度作者的谱面。不允许使用NF。(你玩的第二个地图可以是任何地图，可以是该gd作者的客串难度或者主难度。但第一个地图必须是gd难度)",
+    "MedalSolution": "通过任意 客串难度(Guest Difficulty) 的谱面，然后马上游玩该客串难度作者的谱面。不允许使用NF。（你玩的第二个谱面可以是该客串难度作者的客串难度，或者是他的谱面集，但第一个谱必须是客串难度）",
     "PackID": "",
     "BeatmapID": ""
   },
@@ -2291,7 +2291,7 @@
     "MedalTitle": "True North",
     "colMods": "",
     "gamemodeText": "",
-    "MedalSolution": "连续玩10张来自同一个谱师的谱面，必须是不同谱面。允许使用NF等降低难度的mods。(请注意不能是guess diff)",
+    "MedalSolution": "连续玩10张来自同一个谱师的谱面，必须是不同谱面。允许使用NF等降低难度的mods。(请注意不能是客串难度 --guest diff)",
     "PackID": "",
     "BeatmapID": ""
   },
